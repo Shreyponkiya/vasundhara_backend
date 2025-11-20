@@ -1,0 +1,25 @@
+{
+  "name": "vasundharaoil_backend-main",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "mongoose": "^8.20.0",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.10",
+    "nodemon": "^3.1.11",
+    "path": "^0.12.7",
+    "slugify": "^1.6.6"
+  }
+}
