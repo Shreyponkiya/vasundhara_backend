@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Order = require('../models/Order');
-const sendOrderEmail = require('../utils/sendEmail');
+const sendOrderEmail = require('../sendEmail');
 
 // GET all orders
 router.get('/', async (req, res) => {
