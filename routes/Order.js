@@ -36,14 +36,14 @@ router.post('/', async (req, res) => {
     const order = new Order(req.body);
     const newOrder = await order.save();
 
-    // Fast response
+    // Fast API response
     res.status(201).json({
       message: "Order created successfully",
       order: newOrder
     });
 
-    // Background email
-    setImmediate(() => sendOrderEmail(newOrder));
+    // Background email, non-blocking
+    setTimeout(() => sendOrderEmail(newOrder), 0);
 
   } catch (err) {
     res.status(400).json({ message: err.message });
