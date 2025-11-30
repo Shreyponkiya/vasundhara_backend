@@ -32,7 +32,7 @@ const orderSchema = new mongoose.Schema({
     mobile: {
       type: String,
       required: [true, 'Mobile number is required'],
-      match: [/^\d{10}$/, 'Mobile number must be 10 digits']
+      match: [/^(?:\+91|91)?[6-9]\d{9}$/, 'Mobile number must be valid (10 digits or +91)']
     },
     email: {
       type: String,
