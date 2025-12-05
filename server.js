@@ -30,7 +30,7 @@ mongoose.connect(process.env.MONGODB_URI)
 // Import and mount routers
 app.use('/api/products', require('./routes/Product'));
 app.use('/api/galleries', require('./routes/Gallery'));
-app.use('/api/users', require('./routes/User'));
+app.use('/api/auth/login', require('./routes/User'));
 app.use('/api/contacts', require('./routes/Contact'));
 app.use('/api/orders', require('./routes/Order'));
 app.use('/api/reviews', require('./routes/Review'));

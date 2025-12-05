@@ -280,6 +280,6 @@ router.delete('/:id', async (req, res) => {
     console.error('Error deleting product:', err);
     res.status(500).json({ message: 'Server error while deleting product' });
   }
-});
 
+});
 module.exports = router;
